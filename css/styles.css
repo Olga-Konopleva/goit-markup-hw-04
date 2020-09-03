@@ -304,18 +304,66 @@ a {
 
 .command .text {
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 16px;
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.03em;
 }
 
+.social-nav {
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+}
+
+.social-link {
+    display: block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.social-icon {
+    width: 20px;
+    height: 20px;
+    fill: #AFB1B8;
+}
+
+.social-link:hover,
+.social-link:focus {
+    background-color: var(--accent-color);
+}
+
+.social-link:hover .social-icon {
+    fill: var(--primary-white-color);
+}
+
+/* Постоянные клиенты */
+
+
 /* Footer */
 
 .footer {
+    /* padding-top: 60px;
+    padding-bottom: 60px; */
+    background-color: var(--footer-background-color);
+}
+
+.flexbox {
+    display: flex;
+}
+
+.footer-contacts {
+    margin-right: 70px;
     padding-top: 60px;
     padding-bottom: 60px;
-    background-color: var(--footer-background-color);
 }
 
 .direction {
@@ -338,6 +386,29 @@ a {
     margin-top: 9px;
     display: block;
     color: var(--footer-text-color);
+}
+
+.footer-title {
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+}
+
+.footer-social-link {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-icon.footer-icon {
+    fill: var(--primary-white-color);
+}
+
+.footer-join {
+    padding-top: 72px;
+    padding-bottom: 100px;
 }
 
 /* .direction .link + .link {
