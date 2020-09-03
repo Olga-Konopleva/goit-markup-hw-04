@@ -527,8 +527,7 @@ a {
 .works-item {
     margin: 15px;
     border: 1px solid #EEEEEE;
-    width: 370px;
-    /* width: calc((100% - 30px * 2) / 3); */
+    width: calc((100% - 30px * 3) / 3);
 }
 
 .works-item:hover {
